@@ -31,7 +31,6 @@ public class MainVisual extends Visual {
         lerpedBuffer = new float[width];
         sp.createStars(250, sp.stars, width, height, 30);
         ssp.createShootingStars(10, ssp.star2, width, height, 30);
-        ss.createStars2(250, ss.star3, width, height, 30, 0, 0, 0);
     }
 
     //Switch statement to switch between scenes
@@ -41,13 +40,7 @@ public class MainVisual extends Visual {
         smoothed = getSmoothedAmplitude();
         //sp.render(sp.stars);
         //ssp.render(ssp.star2);
-        //ss.render(ss.star3);
-
-        flying -= smoothed / 2;
-        float yoff = flying;
-
-        jt.createTerrain(yoff);
-        jt.render();
+        ss.render();
     }
 
     public float[] getLerpedBuffer() {
