@@ -4,19 +4,16 @@ import ie.tudublin.*; //import required libraries
 
 //class declaration
 public class StarScene extends Visual{
-<<<<<<< HEAD
+
     MainVisual mv;
 
     Star[] stars;
-<<<<<<< HEAD
-=======
 
->>>>>>> f2b76e82cd1a4e68fe4ce36b5fe9e56b892b65a5
-=======
+
+
     MainVisual mv; //instance of MainVisual class
 
     Star[] stars; //array of Star objects
->>>>>>> 1ec6931fa40536713735a76e26bde94ee3dd80d7
 
     //constructor
     public StarScene(MainVisual mv) {
