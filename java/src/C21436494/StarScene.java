@@ -6,6 +6,10 @@ public class StarScene extends Visual{
     MainVisual mv;
 
     Star[] stars;
+<<<<<<< HEAD
+=======
+
+>>>>>>> f2b76e82cd1a4e68fe4ce36b5fe9e56b892b65a5
 
     public StarScene(MainVisual mv) {
         this.mv = mv;
@@ -41,7 +45,11 @@ public class StarScene extends Visual{
         }
 
         average = sum / mv.getAudioPlayer().mix.size();
+<<<<<<< HEAD
         mv.smoothedAmplitude = MainVisual.lerp(mv.smoothedAmplitude, average, 0.1f);
+=======
+        mv.smoothedAmplitude = lerp(mv.smoothedAmplitude, average, 0.1f);
+>>>>>>> f2b76e82cd1a4e68fe4ce36b5fe9e56b892b65a5
 
         mv.beginShape();
         mv.noFill();
